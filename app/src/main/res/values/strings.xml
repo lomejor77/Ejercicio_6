@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejercicio_6</string>
+    <string name="todo">TODO</string>
+    <string name="ingrese_nombre">Ingrese Nombre</string>
+    <string name="ingrese_apellido">Ingrese Apellido</string>
+    <string name="pass">pass</string>
+</resources>
