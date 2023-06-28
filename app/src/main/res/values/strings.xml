@@ -4,4 +4,6 @@
     <string name="ingrese_nombre">Ingrese Nombre</string>
     <string name="ingrese_apellido">Ingrese Apellido</string>
     <string name="pass">pass</string>
+    <string name="crear_cuenta">CREAR CUENTA</string>
+    <string name="boton">boton</string>
 </resources>

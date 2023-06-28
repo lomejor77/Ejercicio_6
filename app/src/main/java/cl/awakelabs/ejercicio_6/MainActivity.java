@@ -9,35 +9,31 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import cl.awakelabs.ejercicio_6.databinding.ActivityMainBinding;
+
 
 public class MainActivity extends AppCompatActivity {
+
+    private ActivityMainBinding binding;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
 
-        EditText textName;
-        EditText textFirstName;
-        EditText textEmail;
-        EditText textPass;
 
-        textName = findViewById(R.id.textName);
-        textFirstName = findViewById(R.id.textFirstName);
-        textEmail = findViewById(R.id.textEmail);
-        textPass = findViewById(R.id.textPass);
+        setContentView(binding.getRoot());
 
-        Button btnCreate = findViewById(R.id.btnCreate);
 
-        btnCreate.setOnClickListener(new View.OnClickListener() {
+        binding.btnCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                String name = textName.getText().toString();
-                String lastName = textFirstName.getText().toString();
-                String email = textEmail.getText().toString();
-                String pass = textPass.getText().toString();
+                String name = binding.textName.getText().toString();
+                String lastName = binding.textFirstName.getText().toString();
+                String email = binding.textEmail.getText().toString();
+                String pass = binding.textPass.getText().toString();
                 if(name.isEmpty() || lastName.isEmpty() || email.isEmpty() || pass.isEmpty() || !email.contains("@")){
                     Toast.makeText(getBaseContext(), "No puede haber campos vacios", Toast.LENGTH_SHORT).show();
                     return;
