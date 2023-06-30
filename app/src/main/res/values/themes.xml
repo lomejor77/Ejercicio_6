@@ -3,6 +3,9 @@
     <style name="Base.Theme.Ejercicio_6" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#7700FF</item>
+        <item name="android:background">#4CDC33</item>
     </style>
 
     <style name="Theme.Ejercicio_6" parent="Base.Theme.Ejercicio_6" />

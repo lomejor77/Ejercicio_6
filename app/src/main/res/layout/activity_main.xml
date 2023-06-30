@@ -5,7 +5,8 @@
     android:id="@+id/fondo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2EF325"
+    android:background="#4CDC33"
+    android:theme="@style/Theme.Ejercicio_6"
     tools:context=".MainActivity">
 
     <ImageView
@@ -25,17 +26,18 @@
         android:id="@+id/textName"
         style="@style/texStyle"
         android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="text|textPersonName"
         android:text="@string/ingrese_nombre"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:ignore="Deprecated,LabelFor,TextContrastCheck"
-        android:autofillHints="" />
+        tools:ignore="Deprecated,LabelFor,TextContrastCheck" />
 
     <EditText
         android:id="@+id/textFirstName"
+        style="@style/texStyle"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -53,6 +55,7 @@
 
     <EditText
         android:id="@+id/textPass"
+        style="@style/texStyle"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -71,6 +74,7 @@
 
     <EditText
         android:id="@+id/textEmail"
+        style="@style/texStyle"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
