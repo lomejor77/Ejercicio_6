@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E2ED73"
+    android:background="#2EF325"
     tools:context=".MainActivity">
 
     <ImageView
@@ -22,19 +23,16 @@
 
     <EditText
         android:id="@+id/textName"
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:autoText="false"
-        android:autofillHints=""
+        style="@style/texStyle"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="text|textPersonName"
         android:text="@string/ingrese_nombre"
-        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:ignore="Deprecated,LabelFor" />
+        tools:ignore="Deprecated,LabelFor,TextContrastCheck"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/textFirstName"
@@ -45,12 +43,13 @@
         android:ems="10"
         android:inputType="text"
         android:text="@string/ingrese_apellido"
-        android:textSize="26sp"
+        android:textColor="#7700FF"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textName"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textName"
         app:layout_constraintTop_toBottomOf="@+id/textName"
-        tools:ignore="LabelFor" />
+        tools:ignore="LabelFor,TextContrastCheck" />
 
     <EditText
         android:id="@+id/textPass"
@@ -62,6 +61,7 @@
         android:ems="10"
         android:hint="@string/pass"
         android:inputType="textPassword"
+        android:textColor="#7700FF"
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="@+id/textEmail"
         app:layout_constraintHorizontal_bias="1.0"
@@ -78,11 +78,13 @@
         android:autofillHints=""
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:textSize="26sp"
+        android:textColor="#7700FF"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textFirstName"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textFirstName"
         app:layout_constraintTop_toBottomOf="@+id/textFirstName"
+        tools:ignore="TextContrastCheck"
         tools:text="Correo Electronico" />
 
     <Button
